@@ -23,7 +23,23 @@ const typeDefs = gql`
     _id: ID!
     username: String!
     email: String!
-    lastLogin: Date!
+    password : String
+  }
+
+  type Post {
+    _id : ID!
+    postText :String!
+    postAuthor : String!
+    createAt : Date
+    comment : [Comments]
+
+  }
+
+  type  Comments {
+    _id : ID!
+    commentText : String!
+    commentAuthor : String!
+    createdAt : Date
   }
 `;
 
