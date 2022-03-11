@@ -1,13 +1,15 @@
+import React from 'react';
 import Button from "react-bootstrap/Button";
 import "../styles/landing.css";
 
-export default function Home() {
+export default function Landing() {
+
   return (
     <div className="bk-img">
       <div className="main">
         <div className="logoContainer">
-            <p className="logo">HappyProgrammers</p>
-            <p>consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+            <p className="logo">Welcome to Happy Programmers</p>
+            <p>Sign up to collobarate and be happy with fellow Programmers working towards Solutions.</p>
         </div>
         <Button className="btn">Login</Button>
         <Button className="btn">Signup</Button>
@@ -15,3 +17,5 @@ export default function Home() {
     </div>
   );
 }
+
+
